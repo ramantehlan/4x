@@ -15,11 +15,24 @@ But most of the them still doesn't have ways to get weather forcast.
 ## Solution
 
 ``` yml
-A cheap satellite weather data receiver, with GPS. (Under RS 4000)
+A cheap satellite weather data receiver, with GPS. (Keeping it under RS 4000)
 - It don't need internet to work.
 - It is far more cheap.
 - It featch the real time data, directly from the satellite.
 - It can be installed easily on the boats.
+
+
+[Setup Cost]:
+- 820T2 & SDR Dongle
+  1pc: ₹750
+- Orange Pi Zero 256MB  
+  1pc: ₹990
+- Screen, Battery, bulbs etc
+  1pc: ~₹500
+- Case
+  1pc: ~₹150
+
+Total: ₹2390
 ```
 
 ## How it works
