@@ -1,19 +1,21 @@
 # 4X
 
+A cheap satellite weather data receiver, with GPS.
+
 ## Problem
 
 ``` yml
 Fishing done by 14.5 million people.
 And around 60 million in world.
 
-Most of the them have no ways to get weather forcast.
-Or they rely on smartphones and the internet.
+They rely on smartphones and the internet, or the radio.
+But most of the them still doesn't have ways to get weather forcast.
 ```
 
 ## Solution
 
 ``` yml
-A cheap satellite weather data receiver, with GPS.
+A cheap satellite weather data receiver, with GPS. (Under RS 4000)
 - It don't need internet to work.
 - It is far more cheap.
 - It featch the real time data, directly from the satellite.
