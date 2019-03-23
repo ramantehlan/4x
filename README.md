@@ -66,6 +66,6 @@ Not yet decided
 ## Team
 
 - Raman Tehlan `SDR`
-- Raju Dev `IOT`
+- rajudev `IOT`
 - Gourav `Dashboard`
 - Ayon roy `Dashboard`
