@@ -2,13 +2,32 @@
 <head>
 	<title>4x Dashboard</title>
 	<link rel="stylesheet" href="/static/css/index.css"></link>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
+
+<div class="head">
+
+	<div class="left-head">
+		<h1> 4x Dashboard </h1>
+		<p> A cheap satellite weather data receiver, with GPS. <p>
+	</div>
+	<div class="right-head">
+		<div class="bulb green active-bulb"></div>
+		<div class="bulb yellow"></div>
+		<div class="bulb red"></div>
+	</div>
+	
+</div>
+
+<div class="body">
 
 {% for image in images %}
   <img src="{{ url_for('static', filename='images/' + image) }}", height= '400px' , width='400px'>
   <br>
 {% endfor %}
+
+</div>
 
 </body>
 </html>
