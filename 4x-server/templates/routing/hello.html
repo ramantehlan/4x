@@ -1,6 +1,14 @@
 <!doctype html>
-<title>Hello from Flask</title>
+<head>
+	<title>4x Dashboard</title>
+	<link rel="stylesheet" href="/static/css/index.css"></link>
+</head>
+<body>
+
 {% for image in images %}
   <img src="{{ url_for('static', filename='images/' + image) }}", height= '400px' , width='400px'>
   <br>
 {% endfor %}
+
+</body>
+</html>
