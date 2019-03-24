@@ -59,8 +59,15 @@ Under construction
 
 ## Future
 
-```
-Not yet decided
+``` yml
+- We can use the satellite data ( mainly GPS data) to figure out the country water borders and can notify 
+the fishermen about when they are close to crossing the water borders to avoid the legal consequesnces 
+thereupon.
+
+- The data from satellite ( mainly Color & Temperature Data ) can help the fishermen to know the spots
+where they must avoid fishing as those many endangered species exist in those spots.
+
+- Satellite Data can help the fishermen know of the algal blooms & help them plan accordingly .
 ```
 
 ## Team
