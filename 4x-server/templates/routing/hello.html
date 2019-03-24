@@ -1,0 +1,6 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<h1>Hello World!</h1>
+{% for image in images %}
+  <img src="{{ url_for('static', filename='images/' + image) }}">
+{% endfor %}
