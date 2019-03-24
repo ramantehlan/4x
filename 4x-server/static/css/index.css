@@ -37,7 +37,7 @@ body {
 	background:var(--card);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	padding-top:20px;
-	padding-bottom:50px;
+	padding-bottom:20px;
 	margin-bottom:0px;
 }
 
@@ -52,7 +52,18 @@ h1{
 
 
 .right-head{
-	width:70%;
+	width:40%;
+}
+
+.x-point{
+	width:30%;
+	line-height:30px;
+}
+
+.x-point ul{
+	padding:0px;
+	margin:0px;
+	list-style: none;
 }
 
 .right-head-title{
