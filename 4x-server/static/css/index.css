@@ -37,8 +37,8 @@ body {
 	background:var(--card);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	padding-top:20px;
-	padding-bottom:20px;
-	margin-bottom:20px;
+	padding-bottom:50px;
+	margin-bottom:30px;
 }
 
 h1{
@@ -50,8 +50,18 @@ h1{
 	text-align:center;
 }
 
+
 .right-head{
 	width:70%;
+}
+
+.right-head-title{
+	font-weight:bold;
+	font-size:14px;
+	margin-left:50px;
+}
+.right-head-body{
+	margin-top:10px;
 	display:flex;
 	justify-content:flex-start;
 }
@@ -60,10 +70,15 @@ h1{
 	width:90px;
 	height:90px;
 	border-radius:100px;
-	border:1px solid black;
 	margin-left: 50px;
-	opacity:0.1;
+	opacity:0.2;
 }
+
+.bulb-title{
+	text-align:center;
+	margin-top:95px;
+}
+
 
 .green{
 	background-color:green;
@@ -79,6 +94,10 @@ h1{
 
 .active-bulb{
 	opacity:1;
+}
+
+.active-bulb > .bulb-title{
+	font-weight:bold;
 }
 
 .body{
