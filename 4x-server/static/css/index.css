@@ -38,7 +38,7 @@ body {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	padding-top:20px;
 	padding-bottom:50px;
-	margin-bottom:30px;
+	margin-bottom:0px;
 }
 
 h1{
@@ -103,6 +103,22 @@ h1{
 .body{
 	display:flex;
 	flex-flow: row wrap;
-	width:800px;
+	justify-content:space-around;
+	width:1000px;
 	margin:0px auto;
+	margin-bottom:50px;
 }
+
+.card{
+	border-radius: 2.5px;
+	overflow:hidden;
+	margin-top:50px;
+	background:var(--card);
+	color:var(--card-text);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-body{
+	padding:20px;
+}
+

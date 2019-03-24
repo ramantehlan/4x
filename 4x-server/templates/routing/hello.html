@@ -3,6 +3,7 @@
 	<title>4x Dashboard</title>
 	<link rel="stylesheet" href="/static/css/index.css"></link>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	
 </head>
 <body>
 
@@ -40,8 +41,12 @@
 <div class="body">
 
 {% for image in images %}
-  <img src="{{ url_for('static', filename='images/' + image) }}", height= '400px' , width='400px'>
-  <br>
+	<div class="card">
+ 		 <img src="{{ url_for('static', filename='images/' + image) }}", height= '400px' , width='400px'>
+		 <div class="card-body">
+				This is safe
+		 </div>
+  	</div>
 {% endfor %}
 
 </div>
