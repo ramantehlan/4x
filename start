@@ -1,0 +1,5 @@
+#!/bin/bash
+
+python3 4x-server/server.py &
+
+sudo ./4x-armv7l/4x-armv7l &
