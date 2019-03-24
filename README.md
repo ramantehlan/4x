@@ -55,9 +55,7 @@ Total: ₹2390
 
 ## Examples/Demo
 
-```
-Under construction
-```
+![Img](https://raw.githubusercontent.com/HackBMU/HackBMU2019_4X/master/ss.png)
 
 ## Future
 
