@@ -67,5 +67,5 @@ Not yet decided
 
 - Raman Tehlan `SDR`
 - rajudev `IOT`
-- Gourav `Dashboard`
-- Ayon roy `Dashboard`
+- Gaurav `Server`
+- Ayon roy `Server`
