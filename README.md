@@ -8,11 +8,11 @@ A **Reliable**, **Portable** and **Cheap** satellite weather data receiver, whic
 Expensive and centralized weather detection systems, on which millions of people are depend.
 
 Use Case:
-Fishing done by 14.5 million people and around 60 million in world.
+Fishing done by 14.5 million people in india and around 60 million in world.
 
 Current Alternatives:
 They rely on smartphones and the internet, or the radio.
-But most of the them still doesn't have ways to get weather forcast.
+But most of the them still doesn't have ways to get weather forecast.
 ```
 
 ## Solution
