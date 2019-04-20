@@ -1,27 +1,42 @@
-# 4X
+# 4x
 
 A **Reliable**, **Portable** and **Cheap** satellite weather data receiver, which **doesn't require internet** to work.
 
-## Problem
+This project was created in March-2019, during [HackBMU-2019](https://hackbmu.com/).
+
+# Index
+
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Usage](#usage)
+  - [Installation](#installation)
+- [Development](#development)
+  - [Pre-Requisites](#pre-requisites)
+  - [Development Environment](#development-environment)
+  - [File Structure](#file-structure)
+- [Contribution](#contribution)
+- [Resources](#resources)
+- [Gallery](#gallery)
+- [Credit](#credit)
+- [License](#license)
+
+## Problem Statement
 
 ``` yml
-Expensive and centralized weather detection systems, on which millions of people are depend.
+14.5 million fishermen and sailors rely on smartphones and the internet, or the radio.
+But most of them still don't have ways to get the weather forecast.
 
-Use Case:
-Fishing done by 14.5 million people in india and around 60 million in world.
-
-Current Alternatives:
-They rely on smartphones and the internet, or the radio.
-But most of the them still doesn't have ways to get weather forecast.
+Expensive and centralized weather detection systems, on which millions of people depend.
 ```
 
 ## Solution
 
+
 ``` yml
 A cheap satellite weather data receiver, with GPS. (Keeping it under RS 4000)
-- It don't need internet to work.
-- It is far more cheap.
-- It featch the real time data, directly from the satellite.
+- It doesn't need the internet to work.
+- It is far cheaper.
+- It fetches the real-time data, directly from the satellite.
 - It can be installed easily on the boats.
 
 
@@ -38,80 +53,79 @@ A cheap satellite weather data receiver, with GPS. (Keeping it under RS 4000)
 Total: ₹2390
 ```
 
-## How it works
-
-``` yml
-[STEP 1]: Read the weather data from different satellites.
-          - We will use the satellite broadcasting frequency.
-            Indian Regional Navigation Satellite System (IRNSS) : 1176.45 MHz
-            The National Oceanic and Atmospheric Administration (NOAA): 162.550 MHz
-[STEP 2]: Process the collected data.
-        - Decode `.wav` or `.dat` files.
-        - Parse it into `png` format.
-        - Using ML, create a weather Indicator.
-[STEP 3]: Display photos on the screen.
-          Display Weather Indicator.
-```
-
-## Examples/Demo
-
-![Img](https://raw.githubusercontent.com/HackBMU/HackBMU2019_4X/master/ss.png)
-
-## Future
+#### Other Implimentations
 
 ``` yml
 - We can use the satellite data ( mainly GPS data) to figure out the country water borders and can notify
-the fishermen about when they are close to crossing the water borders to avoid the legal consequesnces
+the fishermen about when they are close to crossing the water borders to avoid the legal consequences
 thereupon.
 
 - The data from satellite ( mainly Color & Temperature Data ) can help the fishermen to know the spots
 where they must avoid fishing as many endangered species exist in those spots.
 
-- Satellite Data can help the fishermen know of the algal blooms & help them plan accordingly .
+- Satellite Data can help the fishermen know of the algal blooms & help them plan accordingly.
 ```
+
+## Usage
+
+#### Installation
+
 
 ## Development
 
-### File Structure
+#### Pre-Requisites
+  
+#### Development-Environment
 
-```
+
+#### File Structure
+
+```console
 .
-├── 4x-armv7l
-│   ├── 4x-armv7l
+├── README.md
+├── install
+├── .gitignore
+├── decoder
+│   ├── build
+│   │   ├── 4x-armv7l
+│   │   └── 4x-x86_64
 │   ├── command.go
 │   ├── e.go
 │   └── main.go
-├── 4x-server
-│   ├── server.py
-│   ├── static
-│   │   ├── css
-│   │   │   └── index.css
-│   │   └── images
-│   │       ├── BMU_NOAA_Record_1.png
-│   │       ├── BMU_NOAA_Record_2.png
-│   │       ├── m.png
-│   │       └── output.png
-│   └── templates
-│       └── routing
-│           └── hello.html
-├── 4x-x86_64
-│   ├── 4x-x86_64
-│   ├── command.go
-│   ├── e.go
-│   ├── main.go
-│   └── sample.png
-├── infra-setup
+├── build
+│   ├── 4x-armv7l
+│   └── 4x-x86_64
+├── pi-infra-setup
 │   └── docker-compose.yml
-├── install.sh
-├── README.md
-└── start
+└── server
+    ├── server.py
+    ├── static/...
+    └── templates/...
 ```
 
+No | File/Folder Name | Details
+---|------------------|--------
+ 1 | server | Server to display the decoded images on the dashboard.
+ 2 | server/server.py | Main file to start the server.
+ 3 | pi-infra-setup | Docker Compose for Raspberry Pi. 
+ 4 | decoder | It is the program to fetch and decode weather images.
+ 5 | decoder/build | This is to store the latest binary build of decoder for different architectures. 
 
+## Contribution
 
-## Team
+## Resources
 
-- Raman Tehlan `SDR`
-- rajudev `IOT`
-- Gaurav `Server`
-- Ayon roy `Server`
+## Gallery
+
+![Img](https://raw.githubusercontent.com/HackBMU/HackBMU2019_4X/master/server/static/images/ss.png)
+
+## Credit
+
+- Raman Tehlan
+- Rajudev
+- Gaurav
+- Ayon Roy
+
+## License
+
+GNU General Public License v3.0
