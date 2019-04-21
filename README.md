@@ -10,10 +10,7 @@ This project was created in March-2019, during [HackBMU-2019](https://hackbmu.co
 - [Solution](#solution)
 - [Usage](#usage)
   - [Installation](#installation)
-- [Development](#development)
-  - [Pre-Requisites](#pre-requisites)
-  - [Development Environment](#development-environment)
-  - [File Structure](#file-structure)
+- [File Structure](#file-structure)
 - [Contribution](#contribution)
 - [Resources](#resources)
 - [Gallery](#gallery)
@@ -70,15 +67,20 @@ where they must avoid fishing as many endangered species exist in those spots.
 
 #### Installation
 
+To use this project, perform the following steps in Raspberry Pi:
 
-## Development
+1. Clone this project. `$ git clone https://github.com/ramantehlan/4x/`
+2. Make the install script executable. `$ chmod +x ./install` 
+3. Install the script. `$ ./install` 
 
-#### Pre-Requisites
-  
-#### Development-Environment
+Once you have installed all the dependencies, you should plug in your SDR device and now we can run 4x. 
 
+1. Start the server. `$ python3 ./server/server.py`.
+2. Start the decoder. `$ ./decoder/build/4x-ARCHITECTURE`. 
 
-#### File Structure
+After this, you can find server running on `http://127.0.0.1:2486/`. 
+
+## File Structure
 
 ```console
 .
@@ -113,11 +115,17 @@ No | File/Folder Name | Details
 
 ## Contribution
 
+Feel free to add your own features or improve any current feature, any kind of contribution is appreciated!
+
 ## Resources
+
+- [SDR-Radio](https://www.sdr-radio.com/)
+- [SDR-Wiki](https://en.wikipedia.org/wiki/Software-defined_radio)
+- [Raspberry Pi](https://www.raspberrypi.org/)
 
 ## Gallery
 
-![Img](https://raw.githubusercontent.com/HackBMU/HackBMU2019_4X/master/server/static/images/ss.png)
+![Img](https://raw.githubusercontent.com/ramantehlan/4x/master/server/static/images/ss.png)
 
 ## Credit
 
